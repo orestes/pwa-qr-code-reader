@@ -1,0 +1,9 @@
+<h3>QR Scanner</h3>
+
+<div>
+  <a *ngIf="lastURL$ | async as uri" [href]="uri" target="_blank">{{ uri }}</a>
+</div>
+
+<div>
+  <video #preview id="preview"></video>
+</div>
